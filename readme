@@ -1,0 +1,21 @@
+Useful vite commands.
+
+---
+
+To run the vite dev server (which uses the project root as the root directory) run:
+
+$ npx vite
+
+---
+
+When the app is ready for build, run:
+
+$ npm run build
+
+---
+
+To preview the build, run:
+
+$ npm run preview
+
+---

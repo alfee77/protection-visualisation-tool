@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Protection App</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#" class="nav-brand">Circuit Protection Visualisation Tool</a>
+    </nav>
+
+    <div class="container" id="main">
+      <h2>Circuit buses</h2>
+      <!-- <div id="app"></div> -->
+      <form id="create-form">
+        <label for="select-bus">Select buses:</label>
+        <select id="select-bus">
+          <option id="default" value="">Please select</option>
+        </select>
+        <button id="add-bus" class="btn btn-default">Add Bus</button>
+        <ul id="bus-list" class="bus-branch-list"></ul>
+        <button id="build-circ" class="btn btn-default">Build Circuit</button>
+        <h2 id="branch-header"></h2>
+        <ul id="branch-list" class="bus-branch-list"></ul>
+      </form>
+
+      <div><canvas id="chart" width="300px" height="300px"></canvas></div>
+      <script type="module" src="/src/main.js"></script>
+    </div>
+  </body>
+</html>
