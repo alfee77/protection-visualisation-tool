@@ -21,7 +21,12 @@ export const sortByKey = (array, key) => {
  * @param {*} pCircuitBuses
  * @returns circuitBranches
  */
-export const buildCircuit = (pModelBranches, pModel2wtx, pCircuitBuses) => {
+export const buildCircuit = (
+  pModelBranches,
+  pModel2wtx,
+  pModel3wtx,
+  pCircuitBuses
+) => {
   let possibleBranches = [];
   let circuitBranches = [];
 
@@ -43,6 +48,19 @@ export const buildCircuit = (pModelBranches, pModel2wtx, pCircuitBuses) => {
     possibleBranches = [
       ...possibleBranches,
       ...pModel2wtx.filter((tx) => {
+        return (
+          tx["From Bus  Name"].includes(bus["Bus  Name"]) ||
+          tx["To Bus  Name"].includes(bus["Bus  Name"])
+        );
+      }),
+    ];
+  });
+
+  //Loop through the passed circuit buses, and extract all branches that contain said circuit bus. Store these branches in possibleBranches[]:
+  pCircuitBuses.forEach((bus) => {
+    possibleBranches = [
+      ...possibleBranches,
+      ...pModel3wtx.filter((tx) => {
         return (
           tx["From Bus  Name"].includes(bus["Bus  Name"]) ||
           tx["To Bus  Name"].includes(bus["Bus  Name"])

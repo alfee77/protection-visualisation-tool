@@ -5,6 +5,7 @@ let modelBuses = [];
 let modelBusSelect = document.querySelector("#select-bus");
 let modelBranches = [];
 let model2wtx = [];
+let model3wtx = [];
 let addBus = document.querySelector("#add-bus");
 let circuitBuses = [];
 let circuitBusesCards = document.querySelector("#bus-list");
@@ -37,6 +38,12 @@ fetch(new Request("./working_data/ETYS DATA 2024 YEAR 2 2 Winding Tx.json"))
   .then((response) => response.json())
   .then((data) => {
     model2wtx = data;
+  });
+
+fetch(new Request("./working_data/ETYS DATA 2024 YEAR 2 3 Winding Tx.json"))
+  .then((response) => response.json())
+  .then((data) => {
+    model3wtx = data;
   });
 
 /*
@@ -84,7 +91,12 @@ addBus.addEventListener("click", (event) => {
 
 buildCircuitButton.addEventListener("click", (event) => {
   event.preventDefault();
-  circuitBranches = buildCircuit(modelBranches, model2wtx, circuitBuses);
+  circuitBranches = buildCircuit(
+    modelBranches,
+    model2wtx,
+    model3wtx,
+    circuitBuses
+  );
   circuitBranchesHeader.innerHTML = "Circuit branches:";
   displayChart(chartCanvas, prepareChartDataSets(circuitBranches));
   circuitBranchesCards.innerHTML = "";
