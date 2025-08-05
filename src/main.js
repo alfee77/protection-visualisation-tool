@@ -1,9 +1,14 @@
 import { displayChart } from "./chartSetup.js";
-import { sortByKey, buildCircuit, prepareChartDataSets } from "./helper.js";
+import {
+  sortByKey,
+  getCircuitBranches,
+  mapCircuitBuses,
+  prepareChartDataSets,
+} from "./helper.js";
 
 let modelBuses = [];
 let modelBusSelect = document.querySelector("#select-bus");
-let modelBranches = [];
+let modelACCircuits = [];
 let model2wtx = [];
 let model3wtx = [];
 let addBus = document.querySelector("#add-bus");
@@ -35,7 +40,7 @@ fetch(new Request("./ETYS DATA 2024 YEAR 2 AC Lines.json"))
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
-    modelBranches = data;
+    modelACCircuits = data;
   });
 
 fetch(new Request("./ETYS DATA 2024 YEAR 2 2 Winding Tx.json"))
@@ -97,12 +102,13 @@ addBus.addEventListener("click", (event) => {
 
 buildCircuitButton.addEventListener("click", (event) => {
   event.preventDefault();
-  circuitBranches = buildCircuit(
-    modelBranches,
+  circuitBranches = getCircuitBranches(
+    modelACCircuits,
     model2wtx,
     model3wtx,
     circuitBuses
   );
+  mapCircuitBuses(circuitBuses, circuitBuses[0], circuitBranches);
   circuitBranchesHeader.innerHTML = "Circuit branches:";
   displayChart(chartCanvas, prepareChartDataSets(circuitBranches));
   circuitBranchesCards.innerHTML = "";

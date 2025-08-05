@@ -14,15 +14,17 @@ export const sortByKey = (array, key) => {
 };
 
 /**
- * By far the tastiest function so far. Takes the entire model branches, the selected circuit buses, and creates an array of
- * circuit branches. It is about to be sexed up to then create the chart data for each branch.
+ * Takes the entire model branches (including AC circuits, 2 winding and 3 winding transformers), the selected circuit buses, and creates and returns
+ * an array of circuit branches.
  *
- * @param {*} pModelBranches
+ * @param {*} pModelACCircuits
+ * @param {*} pModel2wtx
+ * @param {*} pModel3wtx
  * @param {*} pCircuitBuses
  * @returns circuitBranches
  */
-export const buildCircuit = (
-  pModelBranches,
+export const getCircuitBranches = (
+  pModelACCircuits,
   pModel2wtx,
   pModel3wtx,
   pCircuitBuses
@@ -30,11 +32,11 @@ export const buildCircuit = (
   let possibleBranches = [];
   let circuitBranches = [];
 
-  //Loop through the passed circuit buses, and extract all branches that contain said circuit bus. Store these branches in possibleBranches[]:
+  //Loop through the passed circuit buses, and extract all AC Circuits that contain said circuit bus. Store these branches in possibleBranches[]:
   pCircuitBuses.forEach((bus) => {
     possibleBranches = [
       ...possibleBranches,
-      ...pModelBranches.filter((branch) => {
+      ...pModelACCircuits.filter((branch) => {
         return (
           branch["From Bus  Name"].includes(bus["Bus  Name"]) ||
           branch["To Bus  Name"].includes(bus["Bus  Name"])
@@ -43,7 +45,7 @@ export const buildCircuit = (
     ];
   });
 
-  //Loop through the passed circuit buses, and extract all branches that contain said circuit bus. Store these branches in possibleBranches[]:
+  //Loop through the passed circuit buses, and extract all 2 winding transformers that contain said circuit bus. Store these branches in possibleBranches[]:
   pCircuitBuses.forEach((bus) => {
     possibleBranches = [
       ...possibleBranches,
@@ -56,7 +58,7 @@ export const buildCircuit = (
     ];
   });
 
-  //Loop through the passed circuit buses, and extract all branches that contain said circuit bus. Store these branches in possibleBranches[]:
+  //Loop through the passed circuit buses, and extract all 3 winding transformers that contain said circuit bus. Store these branches in possibleBranches[]:
   pCircuitBuses.forEach((bus) => {
     possibleBranches = [
       ...possibleBranches,
@@ -70,7 +72,7 @@ export const buildCircuit = (
   });
 
   /*
-   * The forgoing loop will return duplicate branches; creating a Set object out of possibleBranches[]; this will remove, duplicates.
+   * The forgoing loop will return duplicate branches. By creating a Set object out of possibleBranches[]; this will remove, duplicates.
    * Then convert Set object back to array, and store it in place using the spread operator
    */
   let s = new Set(possibleBranches);
@@ -99,8 +101,6 @@ export const buildCircuit = (
     }
   });
 
-  mapCircuitBuses(pCircuitBuses, pCircuitBuses[0], circuitBranches);
-
   /* Establish x and y coordinates for all branches from the relaying point out */
 
   return circuitBranches;
@@ -114,8 +114,7 @@ export const buildCircuit = (
  * @param {*} pCircuitBuses
  * @param {*} pRelayBus
  * @param {*} pCircuitBranches
- *
- *
+ * @returns pCircuitBranches
  */
 export const mapCircuitBuses = (pCircuitBuses, pRelayBus, pCircuitBranches) => {
   //set initial conditions
@@ -177,6 +176,7 @@ export const mapCircuitBuses = (pCircuitBuses, pRelayBus, pCircuitBranches) => {
       },
     ];
   });
+  return pCircuitBranches;
 };
 
 export const prepareChartDataSets = (pCircuitBranches) => {
