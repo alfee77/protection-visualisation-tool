@@ -21,28 +21,34 @@ let chartCanvas = document.querySelector("#chart");
  * The following fetch calls "get" the network buses and AC line data.
  *
  */
-fetch(new Request("./public/ETYS DATA 2024 YEAR 2 Buses.json"))
+
+fetch(new Request("./ETYS DATA 2024 YEAR 2 Buses.json"))
   .then((response) => response.json())
   .then((data) => {
+    console.log("Is it here:");
+    console.log(data);
     modelBuses = data.filter((dat) => dat["Owner Name"] === "SHET");
     sortByKey(modelBuses, "Bus  Name");
   });
 
-fetch(new Request("./public/ETYS DATA 2024 YEAR 2 AC Lines.json"))
+fetch(new Request("./ETYS DATA 2024 YEAR 2 AC Lines.json"))
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
     modelBranches = data;
   });
 
-fetch(new Request("./public/ETYS DATA 2024 YEAR 2 2 Winding Tx.json"))
+fetch(new Request("./ETYS DATA 2024 YEAR 2 2 Winding Tx.json"))
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
     model2wtx = data;
   });
 
-fetch(new Request("./public/ETYS DATA 2024 YEAR 2 3 Winding Tx.json"))
+fetch(new Request("./ETYS DATA 2024 YEAR 2 3 Winding Tx.json"))
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
     model3wtx = data;
   });
 
