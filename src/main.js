@@ -17,21 +17,20 @@ let circuitBusesCards = document.querySelector("#bus-list");
 let circuitBranches = [];
 let circuitBranchesHeader = document.querySelector("#branch-header");
 let circuitBranchesCards = document.querySelector("#branch-list");
+let circuitId = document.querySelector("#circ-id");
 let buildCircuitButton = document.querySelector("#build-circ");
 let busListGood = false;
 let chartCanvas = document.querySelector("#chart");
+let savedCircuitBuses = [];
+let saveCircuitBusesButton = document.querySelector("#save-circ");
 
 /*
- *
  * The following fetch calls "get" the network buses and AC line data.
- *
  */
 
 fetch(new Request("./ETYS DATA 2024 YEAR 2 Buses.json"))
   .then((response) => response.json())
   .then((data) => {
-    console.log("Is it here:");
-    console.log(data);
     modelBuses = data.filter((dat) => dat["Owner Name"] === "SHET");
     sortByKey(modelBuses, "Bus  Name");
   });
@@ -39,21 +38,18 @@ fetch(new Request("./ETYS DATA 2024 YEAR 2 Buses.json"))
 fetch(new Request("./ETYS DATA 2024 YEAR 2 AC Lines.json"))
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     modelACCircuits = data;
   });
 
 fetch(new Request("./ETYS DATA 2024 YEAR 2 2 Winding Tx.json"))
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     model2wtx = data;
   });
 
 fetch(new Request("./ETYS DATA 2024 YEAR 2 3 Winding Tx.json"))
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     model3wtx = data;
   });
 
@@ -125,4 +121,13 @@ buildCircuitButton.addEventListener("click", (event) => {
     </li>`
     );
   });
+});
+
+saveCircuitBusesButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  savedCircuitBuses.push({
+    id: circuitId.value,
+    sCircuitBuses: circuitBuses,
+  });
+  console.log(savedCircuitBuses);
 });

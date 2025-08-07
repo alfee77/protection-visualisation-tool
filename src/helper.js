@@ -111,10 +111,10 @@ export const getCircuitBranches = (
  * It achieves this by looping through circuit branches (pCircuitBranches), identifying To.. and From... buses, and mapping the buses (pCircuitBuses)
  * with co-ordinates based on R and jX data contained in the AC Circuits Data.
  *
- * @param {*} pCircuitBuses
+ * @param {*} pCircuitBuses[]
  * @param {*} pRelayBus
- * @param {*} pCircuitBranches
- * @returns pCircuitBranches
+ * @param {*} pCircuitBranches[]
+ * @returns pCircuitBranches[]
  */
 export const mapCircuitBuses = (pCircuitBuses, pRelayBus, pCircuitBranches) => {
   //set initial conditions
@@ -179,13 +179,21 @@ export const mapCircuitBuses = (pCircuitBuses, pRelayBus, pCircuitBranches) => {
   return pCircuitBranches;
 };
 
+/**
+ * This function takes the array pCircuitBranches as an argument. This contains all the identified circuit branches, with the mapped nodes/branches.
+ * The function then extracts the relevant chart data, and creates and returns an array of configuration objects (chartDataSets[]) that is then ultimately passed to
+ * the displayChart() function.
+ *
+ * @param {*} pCircuitBranches[]
+ * @returns chartDataSets[]
+ */
 export const prepareChartDataSets = (pCircuitBranches) => {
   let chartDataSets = [];
   pCircuitBranches.forEach((branch) => {
     chartDataSets.push({
-      label: `${branch["From Bus  Name"].substring(0, 5)} - ${branch[
+      label: `${branch["From Bus  Name"].substring(0, 6)} - ${branch[
         "To Bus  Name"
-      ].substring(0, 5)}`,
+      ].substring(0, 6)}`,
       data: branch.chartData,
       pointRadius: 2,
       borderWidth: 1,
