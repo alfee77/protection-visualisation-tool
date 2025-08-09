@@ -191,7 +191,7 @@ export const prepareChartDataSets = (pCircuitBranches) => {
   let chartDataSets = [];
   pCircuitBranches.forEach((branch) => {
     chartDataSets.push({
-      label: `${branch["From Bus  Name"].substring(0, 6)} - ${branch[
+      label: `From ${branch["From Bus  Name"].substring(0, 6)} to ${branch[
         "To Bus  Name"
       ].substring(0, 6)}`,
       data: branch.chartData,

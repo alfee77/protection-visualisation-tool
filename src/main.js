@@ -23,6 +23,7 @@ let busListGood = false;
 let chartCanvas = document.querySelector("#chart");
 let savedCircuitBuses = [];
 let saveCircuitBusesButton = document.querySelector("#save-circ");
+let theChart = {};
 
 /*
  * The following fetch calls "get" the network buses and AC line data.
@@ -105,21 +106,23 @@ buildCircuitButton.addEventListener("click", (event) => {
     circuitBuses
   );
   mapCircuitBuses(circuitBuses, circuitBuses[0], circuitBranches);
-  circuitBranchesHeader.innerHTML = "Circuit branches:";
-  displayChart(chartCanvas, prepareChartDataSets(circuitBranches));
+  theChart = displayChart(chartCanvas, prepareChartDataSets(circuitBranches));
   circuitBranchesCards.innerHTML = "";
+  let n = 1;
   circuitBranches.forEach((branch) => {
     circuitBranchesCards.insertAdjacentHTML(
       "beforeend",
       `<li class="card">
       <div>
-        <h3 class="bName">${branch["From Bus  Name"].substring(
+        <h3 class="bName">Branch #${n}</h3>
+        <div class="bNumber">From: ${branch["From Bus  Name"].substring(
           0,
-          5
-        )} - ${branch["To Bus  Name"].substring(0, 5)}</h3>
+          6
+        )} <br />To  : ${branch["To Bus  Name"].substring(0, 6)}</div>
       </div>
     </li>`
     );
+    n++;
   });
 });
 
@@ -130,4 +133,9 @@ saveCircuitBusesButton.addEventListener("click", (event) => {
     sCircuitBuses: circuitBuses,
   });
   console.log(savedCircuitBuses);
+  circuitBuses = []; //reset the circuit buses
+  document.querySelector("#create-form").reset(); //reset the form
+  circuitBusesCards.innerHTML = "";
+  circuitBranchesCards.innerHTML = "";
+  theChart.destroy();
 });

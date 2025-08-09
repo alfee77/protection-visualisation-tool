@@ -83,5 +83,5 @@ export const displayChart = (chartCanvas, dataPassed) => {
   }
 
   myChart = new Chart(chartCanvas, config);
-  console.log(myChart.canvas);
+  return myChart;
 };
