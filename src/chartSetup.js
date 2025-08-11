@@ -75,12 +75,9 @@ export const displayChart = (chartCanvas, dataPassed) => {
 
   try {
     if (myChart.canvas != undefined) {
-      console.log("Hello");
       myChart.destroy();
     }
-  } catch {
-    console.log("There's no pre-existing chart - go build!");
-  }
+  } catch {}
 
   myChart = new Chart(chartCanvas, config);
   return myChart;

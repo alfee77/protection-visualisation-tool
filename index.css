@@ -319,3 +319,9 @@ select {
   right: 10px;
   color: #777;
 }
+
+.label-wrap {
+  display: grid;
+  grid-template-columns: 100fr 100fr;
+  gap: 20px;
+}

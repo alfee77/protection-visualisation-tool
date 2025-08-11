@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Protection App</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#" class="nav-brand"
+        >Circuit Protection Visualisation Tool V1.0.0</a
+      >
+      <a href="index.html">Circuit Builder</a>
+    </nav>
+
+    <div class="container" id="main">
+      <!-- <div id="app"></div> -->
+      <form id="create-form">
+        <h2>Select Circuit & Relaying Point</h2>
+        <div class="label-wrap">
+          <label for="select-circuit">Select a Circuit:</label>
+          <select id="select-circuit">
+            <option id="default" value="">Please select</option>
+          </select>
+        </div>
+
+        <div class="label-wrap">
+          <label for="select-relay-point">Select a Relaying Point:</label>
+          <select id="select-relay-point">
+            <option id="default" value="">Please select</option>
+          </select>
+        </div>
+      </form>
+
+      <div><canvas id="chart" width="300px" height="300px"></canvas></div>
+      <script type="module" src="/src/circuitViewer.js"></script>
+    </div>
+  </body>
+</html>

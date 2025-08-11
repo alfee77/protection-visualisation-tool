@@ -15,7 +15,6 @@ let addBus = document.querySelector("#add-bus");
 let circuitBuses = [];
 let circuitBusesCards = document.querySelector("#bus-list");
 let circuitBranches = [];
-let circuitBranchesHeader = document.querySelector("#branch-header");
 let circuitBranchesCards = document.querySelector("#branch-list");
 let circuitId = document.querySelector("#circ-id");
 let buildCircuitButton = document.querySelector("#build-circ");
@@ -32,7 +31,13 @@ let theChart = {};
 fetch(new Request("./ETYS DATA 2024 YEAR 2 Buses.json"))
   .then((response) => response.json())
   .then((data) => {
-    modelBuses = data.filter((dat) => dat["Owner Name"] === "SHET");
+    modelBuses = data.filter(
+      (dat) =>
+        dat["Owner Name"] === "SHET" ||
+        dat["Bus  Name"] === "BONB4-" ||
+        dat["Bus  Name"] === "ZW052B" ||
+        dat["Bus  Name"] === "DENN4-"
+    );
     sortByKey(modelBuses, "Bus  Name");
   });
 
@@ -132,7 +137,6 @@ saveCircuitBusesButton.addEventListener("click", (event) => {
     id: circuitId.value,
     sCircuitBuses: circuitBuses,
   });
-  console.log(savedCircuitBuses);
   circuitBuses = []; //reset the circuit buses
   document.querySelector("#create-form").reset(); //reset the form
   circuitBusesCards.innerHTML = "";

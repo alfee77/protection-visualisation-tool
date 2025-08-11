@@ -944,5 +944,763 @@
         }
       }
     ]
+  },
+
+  {
+    "id": "400kV_VND1",
+    "sCircuitBuses": [
+      {
+        "Bus  Number": 18240,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "PEHE4J",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0074,
+        "Angle (deg)": 87.66,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "Bus  Number": 50540,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "NEDE4J",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.008,
+        "Angle (deg)": 87.6,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 0.554,
+          "y": 5.342
+        }
+      }
+    ]
+  },
+  {
+    "id": "400kV_VND2",
+    "sCircuitBuses": [
+      {
+        "Bus  Number": 18249,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "PEHE4K",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0074,
+        "Angle (deg)": 87.66,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "Bus  Number": 50549,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "NEDE4K",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0082,
+        "Angle (deg)": 87.61,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 0.554,
+          "y": 5.342
+        }
+      }
+    ]
+  },
+  {
+    "id": "400kV_NDR1",
+    "sCircuitBuses": [
+      {
+        "Bus  Number": 15040,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "ROTI4J",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0076,
+        "Angle (deg)": 87.16,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "Bus  Number": 50540,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "NEDE4J",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.008,
+        "Angle (deg)": 87.6,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 0.554,
+          "y": 5.342
+        }
+      }
+    ]
+  },
+  {
+    "id": "400kV_NDR2",
+    "sCircuitBuses": [
+      {
+        "Bus  Number": 15041,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "ROTI4K",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0076,
+        "Angle (deg)": 87.16,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 1.133,
+          "y": 10.931
+        }
+      },
+      {
+        "Bus  Number": 50549,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "NEDE4K",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0082,
+        "Angle (deg)": 87.61,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 0.554,
+          "y": 5.342
+        }
+      }
+    ]
+  },
+  {
+    "id": "400kV_HR1",
+    "sCircuitBuses": [
+      {
+        "Bus  Number": 10740,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "BLHI4-",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 60,
+        "Zone Name": "T6",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0097,
+        "Angle (deg)": 88.08,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "Bus  Number": 15040,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "ROTI4J",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0076,
+        "Angle (deg)": 87.16,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "400kV_HR2",
+    "sCircuitBuses": [
+      {
+        "Bus  Number": 10740,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "BLHI4-",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 60,
+        "Zone Name": "T6",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0097,
+        "Angle (deg)": 88.08,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "Bus  Number": 15041,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "ROTI4K",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0076,
+        "Angle (deg)": 87.16,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 1.133,
+          "y": 10.931
+        }
+      }
+    ]
+  },
+  {
+    "id": "400kV_XR1",
+    "sCircuitBuses": [
+      {
+        "Bus  Number": 15040,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "ROTI4J",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0076,
+        "Angle (deg)": 87.16,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "Bus  Number": 15840,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "KINT4J",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0042,
+        "Angle (deg)": 85.93,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 0.742,
+          "y": 7.165
+        }
+      },
+      {
+        "Bus  Number": 15829,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "KINT2K",
+        "Base kV": 275,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0013,
+        "Angle (deg)": 82.6,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 0.982,
+          "y": 30.797
+        }
+      }
+    ]
+  },
+  {
+    "id": "400kV_XR2",
+    "sCircuitBuses": [
+      {
+        "Bus  Number": 15041,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "ROTI4K",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0076,
+        "Angle (deg)": 87.16,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "Bus  Number": 15849,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "KINT4K",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0044,
+        "Angle (deg)": 85.94,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 0.742,
+          "y": 7.165
+        }
+      },
+      {
+        "Bus  Number": 15820,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "KINT2J",
+        "Base kV": 275,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 20,
+        "Zone Name": "T2",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0018,
+        "Angle (deg)": 82.63,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 0.982,
+          "y": 30.877
+        }
+      }
+    ]
+  },
+  {
+    "id": "400kV_BG1",
+    "sCircuitBuses": [
+      {
+        "Bus  Number": 10640,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "BEAU4-",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 10,
+        "Zone Name": "T1",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0083,
+        "Angle (deg)": 79.61,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "Bus  Number": 13940,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "FAUG4J",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 10,
+        "Zone Name": "T1",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0051,
+        "Angle (deg)": 76.7,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    ]
+  },
+  {
+    "id": "400kV_GEL1",
+    "sCircuitBuses": [
+      {
+        "Bus  Number": 13940,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "FAUG4J",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 10,
+        "Zone Name": "T1",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0051,
+        "Angle (deg)": 76.7,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "Bus  Number": 29540,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "MELG4J",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 10,
+        "Zone Name": "T1",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.005,
+        "Angle (deg)": 74.53,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 0.498,
+          "y": 7.355
+        }
+      }
+    ]
+  },
+  {
+    "id": "400kV_ELY1",
+    "sCircuitBuses": [
+      {
+        "Bus  Number": 29540,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "MELG4J",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 10,
+        "Zone Name": "T1",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.005,
+        "Angle (deg)": 74.53,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "Bus  Number": 13740,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "TUMM4-",
+        "Base kV": 400,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 0.9959,
+        "Angle (deg)": 69.21,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 1.102,
+          "y": 16.293
+        }
+      },
+      {
+        "Bus  Number": 25140,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "BONB4-",
+        "Base kV": 400,
+        "Area Num": 2,
+        "Area Name": "SPT",
+        "Zone Num": 5,
+        "Zone Name": "SPT",
+        "Owner Num": 2,
+        "Owner Name": "SPT",
+        "Code": 1,
+        "Voltage (pu)": 0.9923,
+        "Angle (deg)": 61.83,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 2.606,
+          "y": 38.629
+        }
+      },
+      {
+        "Bus  Number": 60301,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "ZW052B",
+        "Base kV": 400,
+        "Area Num": 2,
+        "Area Name": "SPT",
+        "Zone Num": 5,
+        "Zone Name": "SPT",
+        "Owner Num": 2,
+        "Owner Name": "SPT",
+        "Code": 1,
+        "Voltage (pu)": 0.9929,
+        "Angle (deg)": 60.07,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 2.9659999999999997,
+          "y": 43.949
+        }
+      },
+      {
+        "Bus  Number": 30540,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "DENN4-",
+        "Base kV": 400,
+        "Area Num": 2,
+        "Area Name": "SPT",
+        "Zone Num": 5,
+        "Zone Name": "SPT",
+        "Owner Num": 2,
+        "Owner Name": "SPT",
+        "Code": 1,
+        "Voltage (pu)": 0.9925,
+        "Angle (deg)": 59.8,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 3.126,
+          "y": 44.757
+        }
+      }
+    ]
   }
 ]
