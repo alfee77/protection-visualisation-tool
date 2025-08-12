@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Protection App</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="#" class="nav-brand"
+        >Circuit Protection Visualisation Tool V1.0.0</a
+      >
+      <a href="circuit-viewer.html">Circuit Viewer</a>
+    </nav>
+
+    <div class="container" id="main">
+      <!-- <div id="app"></div> -->
+      <form id="create-form">
+        <h2>Select Circuit Buses:</h2>
+        <select id="select-bus">
+          <option id="default" value="">Please select</option>
+        </select>
+        <button id="add-bus" class="btn btn-default">Add Bus</button>
+        <button id="build-circ" class="btn btn-default">Build Circuit</button>
+        <ul id="bus-list" class="bus-branch-list"></ul>
+        <h2 id="branch-header">Circuit branches:</h2>
+        <ul id="branch-list" class="bus-branch-list"></ul>
+        <label for="circ-id">Circuit ID:</label>
+        <input type="text" id="circ-id" name="circ-id" required />
+        <button id="save-circ" class="btn btn-default">Save</button>
+      </form>
+
+      <div><canvas id="chart" width="300px" height="300px"></canvas></div>
+      <script type="module" src="/src/circuitBuilder.js"></script>
+    </div>
+  </body>
+</html>
