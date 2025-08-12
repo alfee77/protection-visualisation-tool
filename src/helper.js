@@ -120,6 +120,8 @@ export const mapCircuitBuses = (pCircuitBuses, pRelayBus, pCircuitBranches) => {
   //set initial conditions
   pCircuitBuses.forEach((bus) => {
     bus.isMapped = false;
+    bus.isRelayPoint = false;
+    bus.busCoordinates = {};
   });
 
   //set relay point
@@ -133,50 +135,64 @@ export const mapCircuitBuses = (pCircuitBuses, pRelayBus, pCircuitBranches) => {
     }
   });
 
-  pCircuitBranches.forEach((branch) => {
-    let fromBus =
-      pCircuitBuses[
-        pCircuitBuses.findIndex((bus) => {
-          return bus["Bus  Number"] === branch["From Bus  Number"];
-        })
-      ];
-    let toBus =
-      pCircuitBuses[
-        pCircuitBuses.findIndex((bus) => {
-          return bus["Bus  Number"] === branch["To Bus  Number"];
-        })
-      ];
-    //loop through the circuit branches and map the circuit buses
-    if (fromBus.isMapped) {
-      //Therefore make the "To Bus  Number" bus have the co-ordinates branch.R + jbranch.X
-      //The code array.findIndex(func) finds the index of the array that contains the object identified by func
-      toBus.busCoordinates = {
-        x: fromBus.busCoordinates.x + branch["R (ohm)"],
-        y: fromBus.busCoordinates.y + branch["X (ohm)"],
-      };
-      toBus.isMapped = true;
-    } else if (toBus.isMapped) {
-      //Therefore make the "From Bus  Number" bus have the co-ordinates branch.R +jbranch.X
-      //The code array.findIndex(func) finds the index of the array that contains the object identified by func
-      fromBus.busCoordinates = {
-        x: toBus.busCoordinates.x + branch["R (ohm)"],
-        y: toBus.busCoordinates.y + branch["X (ohm)"],
-      };
-      fromBus.isMapped = true;
-    }
+  do {
+    pCircuitBranches.forEach((branch) => {
+      //loop through the circuit branches and map the circuit buses
+      let fromBus =
+        pCircuitBuses[
+          //The code array.findIndex(func) finds the index of the array that contains the object identified by func
+          pCircuitBuses.findIndex((bus) => {
+            return bus["Bus  Number"] === branch["From Bus  Number"];
+          })
+        ];
+      let toBus =
+        pCircuitBuses[
+          //The code array.findIndex(func) finds the index of the array that contains the object identified by func
+          pCircuitBuses.findIndex((bus) => {
+            return bus["Bus  Number"] === branch["To Bus  Number"];
+          })
+        ];
 
-    branch.chartData = [
-      {
-        x: fromBus.busCoordinates.x,
-        y: fromBus.busCoordinates.y,
-      },
-      {
-        x: toBus.busCoordinates.x,
-        y: toBus.busCoordinates.y,
-      },
-    ];
-  });
-  return pCircuitBranches;
+      if (fromBus.isMapped && !toBus.isMapped) {
+        //Therefore make the "To Bus  Number" bus have the co-ordinates branch.R + jbranch.X
+        toBus.busCoordinates = {
+          x: fromBus.busCoordinates.x + branch["R (ohm)"],
+          y: fromBus.busCoordinates.y + branch["X (ohm)"],
+        };
+        toBus.isMapped = true;
+      } else if (toBus.isMapped && !fromBus.isMapped) {
+        //Therefore make the "From Bus  Number" bus have the co-ordinates branch.R +jbranch.X
+        fromBus.busCoordinates = {
+          x: toBus.busCoordinates.x + branch["R (ohm)"],
+          y: toBus.busCoordinates.y + branch["X (ohm)"],
+        };
+        fromBus.isMapped = true;
+      }
+
+      branch.chartData = [
+        {
+          x: fromBus.busCoordinates?.x,
+          y: fromBus.busCoordinates?.y,
+        },
+        {
+          x: toBus.busCoordinates?.x,
+          y: toBus.busCoordinates?.y,
+        },
+      ];
+    });
+
+    console.log(
+      pCircuitBuses
+        .map((bus) => bus.isMapped)
+        .some((mappedBus) => mappedBus === false)
+    );
+  } while (
+    pCircuitBuses
+      .map((bus) => bus.isMapped)
+      .some((mappedBus) => mappedBus === false)
+  );
+
+  return pCircuitBuses;
 };
 
 /**

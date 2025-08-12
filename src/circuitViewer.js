@@ -90,6 +90,10 @@ circuitSelect.addEventListener("change", (event) => {
       `<option value=${bus["Bus  Name"]}>${bus["Bus  Name"]}</option>`
     );
   });
+
+  circ2view.sCircuitBuses.filter((bus) => {
+    return bus["Bus  Name"] === relayingPointSelect.value;
+  })[0];
 });
 
 relayingPointSelect.addEventListener("change", (event) => {
@@ -102,9 +106,9 @@ relayingPointSelect.addEventListener("change", (event) => {
 
   mapCircuitBuses(
     circ2view.sCircuitBuses,
-    circ2view.sCircuitBuses.filter(
-      (bus) => bus["Bus  Name"] === relayingPointSelect.value
-    )[0],
+    circ2view.sCircuitBuses.filter((bus) => {
+      return bus["Bus  Name"] === relayingPointSelect.value;
+    })[0],
     circuitBranches
   );
 

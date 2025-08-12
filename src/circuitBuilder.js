@@ -137,6 +137,7 @@ saveCircuitBusesButton.addEventListener("click", (event) => {
     id: circuitId.value,
     sCircuitBuses: circuitBuses,
   });
+  console.log(savedCircuitBuses);
   circuitBuses = []; //reset the circuit buses
   document.querySelector("#create-form").reset(); //reset the form
   circuitBusesCards.innerHTML = "";
