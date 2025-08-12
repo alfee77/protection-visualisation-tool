@@ -212,8 +212,5 @@ export const prepareChartDataSets = (pCircuitBranches) => {
     });
   });
 
-  console.log(pCircuitBranches);
-  pCircuitBranches.forEach((branch) => console.log(branch.chartData));
-
   return chartDataSets;
 };

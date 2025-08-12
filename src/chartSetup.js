@@ -17,6 +17,14 @@ export const displayChart = (chartCanvas, dataPassed) => {
     datasets: dataPassed,
   };
 
+  //this wee bit of code unpicks the dataPassed to parse a maximum axis value
+  const arrayOfMaxImps = [];
+  dataPassed.forEach((branch) => {
+    branch.data.forEach((end) => arrayOfMaxImps.push(end["y"]));
+  });
+  let maxAxisValue = Math.max(...arrayOfMaxImps);
+  console.log(maxAxisValue);
+
   //config block
   const config = {
     type: "scatter",
@@ -59,8 +67,8 @@ export const displayChart = (chartCanvas, dataPassed) => {
           beginAtZero: true,
           // min: -Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 0.5),
           // max: Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 1.5),
-          min: -10,
-          max: 50,
+          min: -Math.ceil(maxAxisValue * 0.3),
+          max: Math.ceil(maxAxisValue * 1.1),
           position: {
             y: 0,
           },
@@ -74,8 +82,8 @@ export const displayChart = (chartCanvas, dataPassed) => {
           beginAtZero: true,
           // min: -Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 0.5),
           // max: Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 1.5),
-          min: -10,
-          max: 50,
+          min: -Math.ceil(maxAxisValue * 0.3),
+          max: Math.ceil(maxAxisValue * 1.1),
           position: {
             x: 0,
           },
