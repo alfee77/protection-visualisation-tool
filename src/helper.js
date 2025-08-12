@@ -136,8 +136,8 @@ export const mapCircuitBuses = (pCircuitBuses, pRelayBus, pCircuitBranches) => {
   });
 
   do {
+    //loop through the circuit branches and map the circuit buses
     pCircuitBranches.forEach((branch) => {
-      //loop through the circuit branches and map the circuit buses
       let fromBus =
         pCircuitBuses[
           //The code array.findIndex(func) finds the index of the array that contains the object identified by func
@@ -180,12 +180,6 @@ export const mapCircuitBuses = (pCircuitBuses, pRelayBus, pCircuitBranches) => {
         },
       ];
     });
-
-    console.log(
-      pCircuitBuses
-        .map((bus) => bus.isMapped)
-        .some((mappedBus) => mappedBus === false)
-    );
   } while (
     pCircuitBuses
       .map((bus) => bus.isMapped)
@@ -217,6 +211,9 @@ export const prepareChartDataSets = (pCircuitBranches) => {
       tension: 0.1,
     });
   });
+
+  console.log(pCircuitBranches);
+  pCircuitBranches.forEach((branch) => console.log(branch.chartData));
 
   return chartDataSets;
 };

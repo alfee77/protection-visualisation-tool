@@ -4,7 +4,14 @@ import zoomPlugin from "chartjs-plugin-zoom";
 Chart.register(zoomPlugin);
 
 let myChart;
-
+/**
+ *
+ * @param {*} chartCanvas
+ * @param {*} dataPassed
+ * @returns
+ *
+ * dataPassed is an array containing the dataset for presentation in the chart.
+ */
 export const displayChart = (chartCanvas, dataPassed) => {
   const data = {
     datasets: dataPassed,
@@ -27,8 +34,8 @@ export const displayChart = (chartCanvas, dataPassed) => {
             mode: "xy",
           },
           limits: {
-            x: { min: -20, max: 100 },
-            y: { min: -20, max: 100 },
+            x: { min: -20, max: 50 },
+            y: { min: -20, max: 50 },
           },
           pan: {
             enabled: true,
@@ -50,8 +57,10 @@ export const displayChart = (chartCanvas, dataPassed) => {
             align: "center",
           },
           beginAtZero: true,
-          min: -Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 0.5),
-          max: Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 1.5),
+          // min: -Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 0.5),
+          // max: Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 1.5),
+          min: -10,
+          max: 50,
           position: {
             y: 0,
           },
@@ -63,8 +72,10 @@ export const displayChart = (chartCanvas, dataPassed) => {
             align: "center",
           },
           beginAtZero: true,
-          min: -Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 0.5),
-          max: Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 1.5),
+          // min: -Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 0.5),
+          // max: Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 1.5),
+          min: -10,
+          max: 50,
           position: {
             x: 0,
           },
