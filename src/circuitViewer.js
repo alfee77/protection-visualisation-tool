@@ -58,6 +58,7 @@ fetch(new Request("./circuits.json"))
   .then((response) => response.json())
   .then((data) => {
     availableCircuits = data;
+    sortByKey(data, "id");
   });
 
 /*
@@ -83,6 +84,8 @@ circuitSelect.addEventListener("change", (event) => {
   circ2view = availableCircuits.filter(
     (circ) => circ["id"] === circuitSelect.value
   )[0];
+
+  sortByKey(circ2view.sCircuitBuses, "Bus  Name");
 
   circ2view.sCircuitBuses.forEach((bus) => {
     relayingPointSelect.insertAdjacentHTML(
