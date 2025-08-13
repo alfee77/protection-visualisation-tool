@@ -106,7 +106,7 @@ relayingPointSelect.addEventListener("change", (event) => {
     model3wtx,
     circ2view.sCircuitBuses
   );
-
+  //
   mapCircuitBuses(
     circ2view.sCircuitBuses,
     circ2view.sCircuitBuses.filter((bus) => {
