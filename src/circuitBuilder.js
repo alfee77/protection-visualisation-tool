@@ -1,10 +1,5 @@
-import { displayChart } from "./chartSetup.js";
-import {
-  sortByKey,
-  getCircuitBranches,
-  mapCircuitBuses,
-  prepareChartDataSets,
-} from "./helper.js";
+import { displayChart, prepareChartDataSets } from "./chartSetup.js";
+import { sortByKey, getCircuitBranches, mapCircuitBuses } from "./helper.js";
 
 let modelBuses = [];
 let modelBusSelect = document.querySelector("#select-bus");

@@ -4,6 +4,44 @@ import zoomPlugin from "chartjs-plugin-zoom";
 Chart.register(zoomPlugin);
 
 let myChart;
+
+/**
+ * This function takes the array pCircuitBranches as an argument. This contains all the identified circuit branches, with the mapped nodes/branches.
+ * The function then extracts the relevant chart data, and creates and returns an array of configuration objects (chartDataSets[]) that is then ultimately passed to
+ * the displayChart() function.
+ *
+ * @param {*} pCircuitBranches[]
+ * @returns chartDataSets[]
+ */
+export const prepareChartDataSets = (pCircuitBranches, protectionDevice) => {
+  let chartDataSets = [];
+  pCircuitBranches.forEach((branch) => {
+    chartDataSets.push({
+      label: `From ${branch["From Bus  Name"].substring(0, 6)} to ${branch[
+        "To Bus  Name"
+      ].substring(0, 6)}`,
+      data: branch.chartData,
+      pointRadius: 2,
+      borderWidth: 1,
+      fill: false,
+      tension: 0.1,
+    });
+  });
+
+  protectionDevice.zonesDataArray.forEach((zone) => {
+    chartDataSets.push({
+      label: `${zone.zoneName}`,
+      data: zone.chartData,
+      pointRadius: 0,
+      borderWidth: 1,
+      fill: false,
+      tension: 0.1,
+    });
+  });
+
+  return chartDataSets;
+};
+
 /**
  *
  * @param {*} chartCanvas
@@ -23,7 +61,6 @@ export const displayChart = (chartCanvas, dataPassed) => {
     branch.data.forEach((end) => arrayOfMaxImps.push(end["y"]));
   });
   let maxAxisValue = Math.max(...arrayOfMaxImps);
-  console.log(maxAxisValue);
 
   //config block
   const config = {
@@ -42,8 +79,14 @@ export const displayChart = (chartCanvas, dataPassed) => {
             mode: "xy",
           },
           limits: {
-            x: { min: -20, max: 50 },
-            y: { min: -20, max: 50 },
+            x: {
+              min: -Math.ceil(maxAxisValue * 0.3),
+              max: Math.ceil(maxAxisValue * 1.1),
+            },
+            y: {
+              min: -Math.ceil(maxAxisValue * 0.3),
+              max: Math.ceil(maxAxisValue * 1.1),
+            },
           },
           pan: {
             enabled: true,
@@ -65,8 +108,6 @@ export const displayChart = (chartCanvas, dataPassed) => {
             align: "center",
           },
           beginAtZero: true,
-          // min: -Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 0.5),
-          // max: Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 1.5),
           min: -Math.ceil(maxAxisValue * 0.3),
           max: Math.ceil(maxAxisValue * 1.1),
           position: {
@@ -80,8 +121,6 @@ export const displayChart = (chartCanvas, dataPassed) => {
             align: "center",
           },
           beginAtZero: true,
-          // min: -Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 0.5),
-          // max: Math.ceil(dataPassed[dataPassed.length - 1].data[1].y * 1.5),
           min: -Math.ceil(maxAxisValue * 0.3),
           max: Math.ceil(maxAxisValue * 1.1),
           position: {

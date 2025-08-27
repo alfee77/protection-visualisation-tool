@@ -189,28 +189,9 @@ export const mapCircuitBuses = (pCircuitBuses, pRelayBus, pCircuitBranches) => {
   return pCircuitBuses;
 };
 
-/**
- * This function takes the array pCircuitBranches as an argument. This contains all the identified circuit branches, with the mapped nodes/branches.
- * The function then extracts the relevant chart data, and creates and returns an array of configuration objects (chartDataSets[]) that is then ultimately passed to
- * the displayChart() function.
- *
- * @param {*} pCircuitBranches[]
- * @returns chartDataSets[]
- */
-export const prepareChartDataSets = (pCircuitBranches) => {
-  let chartDataSets = [];
-  pCircuitBranches.forEach((branch) => {
-    chartDataSets.push({
-      label: `From ${branch["From Bus  Name"].substring(0, 6)} to ${branch[
-        "To Bus  Name"
-      ].substring(0, 6)}`,
-      data: branch.chartData,
-      pointRadius: 2,
-      borderWidth: 1,
-      fill: false,
-      tension: 0.1,
-    });
-  });
-
-  return chartDataSets;
-};
+export async function getFile() {
+  // Open file picker and destructure the result the first handle
+  const [fileHandle] = await window.showOpenFilePicker();
+  const file = await fileHandle.getFile();
+  return file;
+}

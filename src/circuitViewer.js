@@ -1,10 +1,11 @@
-import { displayChart } from "./chartSetup.js";
+import { displayChart, prepareChartDataSets } from "./chartSetup.js";
 import {
   sortByKey,
   getCircuitBranches,
   mapCircuitBuses,
-  prepareChartDataSets,
+  getFile,
 } from "./helper.js";
+import { MicomP443 } from "./micomP443.js";
 
 let availableCircuits = [];
 let circuitSelect = document.querySelector("#select-circuit");
@@ -15,9 +16,10 @@ let model2wtx = [];
 let model3wtx = [];
 let circuitBranches = [];
 let relayingPointSelect = document.querySelector("#select-relay-point");
+let selectRelayFileBtn = document.querySelector("#select-relay-file-btn");
 let circListGood = false;
 let chartCanvas = document.querySelector("#chart");
-let theChart = {};
+let mainProtection;
 
 /*
  * The following fetch calls "get" the network buses and AC line data.
@@ -106,7 +108,7 @@ relayingPointSelect.addEventListener("change", (event) => {
     model3wtx,
     circ2view.sCircuitBuses
   );
-  //
+
   mapCircuitBuses(
     circ2view.sCircuitBuses,
     circ2view.sCircuitBuses.filter((bus) => {
@@ -114,6 +116,20 @@ relayingPointSelect.addEventListener("change", (event) => {
     })[0],
     circuitBranches
   );
+});
 
-  theChart = displayChart(chartCanvas, prepareChartDataSets(circuitBranches));
+selectRelayFileBtn.addEventListener("click", async (event) => {
+  event.preventDefault();
+  const relayFile = await getFile();
+  mainProtection = new MicomP443(
+    123,
+    "132kV_Dundee1",
+    JSON.parse(await relayFile.text())
+  );
+  console.log(mainProtection);
+
+  theChart = displayChart(
+    chartCanvas,
+    prepareChartDataSets(circuitBranches, mainProtection)
+  );
 });
