@@ -9,6 +9,15 @@ export class MicomP443 {
     this.zone1Data.zoneName = "Zone 1 Ph";
     this.zone1Data.chartData = [];
 
+    if (this.relayConfiguration["Setting Values"] === "Secondary") {
+      console.log(this.relayConfiguration["Line Impedance"]);
+      this.relayConfiguration["Line Impedance"] *=
+        (this.relayConfiguration["Main VT Primary"] * 1000) /
+        this.relayConfiguration["Main VT Sec'y"] /
+        (this.relayConfiguration["Phase CT Primary"] /
+          this.relayConfiguration["Phase CT Sec'y"]);
+      console.log(this.relayConfiguration["Line Impedance"]);
+    }
     this.zone1Data.reachOhms =
       (this.relayConfiguration["Zone 1 Ph Reach"] / 100) *
       this.relayConfiguration["Line Impedance"];

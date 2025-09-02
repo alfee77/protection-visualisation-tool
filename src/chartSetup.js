@@ -28,16 +28,18 @@ export const prepareChartDataSets = (pCircuitBranches, protectionDevice) => {
     });
   });
 
-  protectionDevice.zonesDataArray.forEach((zone) => {
-    chartDataSets.push({
-      label: `${zone.zoneName}`,
-      data: zone.chartData,
-      pointRadius: 0,
-      borderWidth: 1,
-      fill: false,
-      tension: 0.1,
+  if (protectionDevice) {
+    protectionDevice.zonesDataArray.forEach((zone) => {
+      chartDataSets.push({
+        label: `${zone.zoneName}`,
+        data: zone.chartData,
+        pointRadius: 0,
+        borderWidth: 1,
+        fill: false,
+        tension: 0.1,
+      });
     });
-  });
+  }
 
   return chartDataSets;
 };
