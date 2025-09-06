@@ -1,9 +1,11 @@
 export class MicomP443 {
-  constructor(busNo, circuitId, relayConfiguration) {
-    this.busNo = busNo;
-    this.circuitId = circuitId;
+  constructor(relayConfiguration) {
     this.relayConfiguration = relayConfiguration[0];
     this.zonesDataArray = [];
+
+    /**
+     * Configure zone 1
+     */
 
     this.zone1Data = {};
     this.zone1Data.zoneName = "Zone 1 Ph";
@@ -43,8 +45,9 @@ export class MicomP443 {
     this.zonesDataArray.push(this.zone1Data);
 
     /**
-     * Go configure Zone 2
+     * Configure zone 2
      */
+
     this.zone2Data = {};
     this.zone2Data.zoneName = "Zone 2 Ph";
     this.zone2Data.chartData = [];

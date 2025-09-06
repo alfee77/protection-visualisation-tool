@@ -121,11 +121,7 @@ relayingPointSelect.addEventListener("change", (event) => {
 selectRelayFileBtn.addEventListener("click", async (event) => {
   event.preventDefault();
   const relayFile = await getFile();
-  mainProtection = new MicomP443(
-    123,
-    "132kV_Dundee1",
-    JSON.parse(await relayFile.text())
-  );
+  mainProtection = new MicomP443(JSON.parse(await relayFile.text()));
   console.log(mainProtection);
 
   theChart = displayChart(
