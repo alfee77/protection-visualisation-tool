@@ -5,7 +5,7 @@ import { defineConfig } from "vite";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  base: "/protection-visualisation-tool/",
+  //base: "/protection-visualisation-tool/",
   build: {
     rollupOptions: {
       input: {
