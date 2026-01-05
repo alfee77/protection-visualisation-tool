@@ -2984,7 +2984,7 @@
     ]
   },
   {
-    "id": "132kV_PCN-GP1",
+    "id": "132kV_PCN",
     "sCircuitBuses": [
       {
         "Bus  Number": 12010,
@@ -3039,32 +3039,6 @@
         }
       },
       {
-        "Bus  Number": 11412,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "BUMU1R",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0073,
-        "Angle (deg)": 62,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 7.492,
-          "y": 17.023
-        }
-      },
-      {
         "Bus  Number": 11430,
         "Section Number": "",
         "Substation  Number": "",
@@ -3089,89 +3063,11 @@
           "x": 8.067416,
           "y": 57.708464
         }
-      },
-      {
-        "Bus  Number": 16311,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "AMUL1E",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.013,
-        "Angle (deg)": 62.25,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 10.66,
-          "y": 24.287
-        }
-      },
-      {
-        "Bus  Number": 16312,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "AMUL1F",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0135,
-        "Angle (deg)": 62.32,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 11.099,
-          "y": 25.688
-        }
-      },
-      {
-        "Bus  Number": 23810,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "GRIF1S",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0139,
-        "Angle (deg)": 62.46,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 12.319,
-          "y": 28.485
-        }
       }
     ]
   },
   {
-    "id": "132kV_CAS-GA2",
+    "id": "132kV_CAS",
     "sCircuitBuses": [
       {
         "Bus  Number": 12010,
@@ -3226,32 +3122,6 @@
         }
       },
       {
-        "Bus  Number": 10112,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "ABNE1R",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0089,
-        "Angle (deg)": 63.12,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 4.356000000000001,
-          "y": 9.879
-        }
-      },
-      {
         "Bus  Number": 10130,
         "Section Number": "",
         "Substation  Number": "",
@@ -3276,89 +3146,11 @@
           "x": 6.168520000000001,
           "y": 58.614352000000004
         }
-      },
-      {
-        "Bus  Number": 16313,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "AMUL1G",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0154,
-        "Angle (deg)": 62.95,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 9.358,
-          "y": 21.347
-        }
-      },
-      {
-        "Bus  Number": 16314,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "AMUL1H",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0158,
-        "Angle (deg)": 62.95,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 9.797,
-          "y": 22.748
-        }
-      },
-      {
-        "Bus  Number": 23811,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "GRIF1T",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0155,
-        "Angle (deg)": 62.95,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 11.017000000000001,
-          "y": 25.545
-        }
       }
     ]
   },
   {
-    "id": "132kV_EG1",
+    "id": "132kV_EG1_GA",
     "sCircuitBuses": [
       {
         "Bus  Number": 13711,
@@ -3515,11 +3307,142 @@
           "x": 4.202,
           "y": 9.781
         }
+      },
+      {
+        "Bus  Number": 23838,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "GRIF38",
+        "Base kV": 33,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.02,
+        "Angle (deg)": 36.33,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 4.6062368,
+          "y": 36.3769936
+        }
+      },
+      {
+        "Bus  Number": 16314,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "AMUL1H",
+        "Base kV": 132,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0158,
+        "Angle (deg)": 62.95,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 5.422,
+          "y": 12.578000000000001
+        }
+      },
+      {
+        "Bus  Number": 16313,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "AMUL1G",
+        "Base kV": 132,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0154,
+        "Angle (deg)": 62.95,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 5.861,
+          "y": 13.979000000000001
+        }
+      },
+      {
+        "Bus  Number": 10112,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "ABNE1R",
+        "Base kV": 132,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0089,
+        "Angle (deg)": 63.12,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 10.863,
+          "y": 25.447000000000003
+        }
+      },
+      {
+        "Bus  Number": 10130,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "ABNE3-",
+        "Base kV": 33,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": -2,
+        "Voltage (pu)": 1.0138,
+        "Angle (deg)": 32.08,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 12.69252,
+          "y": 75.1054
+        }
       }
     ]
   },
+
   {
-    "id": "132kV_EG2",
+    "id": "132kV_EG2_GP",
     "sCircuitBuses": [
       {
         "Bus  Number": 13712,
@@ -3676,249 +3599,115 @@
           "x": 4.202,
           "y": 9.781
         }
+      },
+      {
+        "Bus  Number": 16312,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "AMUL1F",
+        "Base kV": 132,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0135,
+        "Angle (deg)": 62.32,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 5.422,
+          "y": 12.578000000000001
+        }
+      },
+      {
+        "Bus  Number": 16311,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "AMUL1E",
+        "Base kV": 132,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.013,
+        "Angle (deg)": 62.25,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 5.861,
+          "y": 13.979000000000001
+        }
+      },
+      {
+        "Bus  Number": 11412,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "BUMU1R",
+        "Base kV": 132,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0073,
+        "Angle (deg)": 62,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 9.029,
+          "y": 21.243000000000002
+        }
+      },
+      {
+        "Bus  Number": 23836,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "GRIF36",
+        "Base kV": 33,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.02,
+        "Angle (deg)": 35.85,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 4.6062368,
+          "y": 36.3769936
+        }
       }
     ]
   },
   {
     "id": "132kV_TAN-TBN",
-    "sCircuitBuses": [
-      {
-        "Bus  Number": 19810,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "TEAL1-",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0102,
-        "Angle (deg)": 64.03,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": true,
-        "busCoordinates": {
-          "x": 0,
-          "y": 0
-        }
-      },
-      {
-        "Bus  Number": 13011,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "DENS1Q",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0078,
-        "Angle (deg)": 64.38,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 0.591,
-          "y": 3.32
-        }
-      },
-      {
-        "Bus  Number": 11012,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "BREC1R",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0096,
-        "Angle (deg)": 66.43,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 5.958,
-          "y": 14.349
-        }
-      },
-      {
-        "Bus  Number": 10411,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "ARBR1Q",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0061,
-        "Angle (deg)": 64.01,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 2.8899999999999997,
-          "y": 9.181
-        }
-      },
-      {
-        "Bus  Number": 10430,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "ARBR3-",
-        "Base kV": 33,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": -2,
-        "Voltage (pu)": 1.0109,
-        "Angle (deg)": 31.1,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 4.10968,
-          "y": 58.473496
-        }
-      }
-    ]
-  },
-  {
-    "id": "132kV_TAS",
-    "sCircuitBuses": [
-      {
-        "Bus  Number": 19810,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "TEAL1-",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0102,
-        "Angle (deg)": 64.03,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": true,
-        "busCoordinates": {
-          "x": 0,
-          "y": 0
-        }
-      },
-      {
-        "Bus  Number": 13012,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "DENS1R",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.01,
-        "Angle (deg)": 63.86,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9
-      },
-      {
-        "Bus  Number": 10412,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "ARBR1R",
-        "Base kV": 132,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": 1,
-        "Voltage (pu)": 1.0084,
-        "Angle (deg)": 63.56,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 5.32936,
-          "y": 107.765992
-        }
-      },
-      {
-        "Bus  Number": 10430,
-        "Section Number": "",
-        "Substation  Number": "",
-        "Bus  Name": "ARBR3-",
-        "Base kV": 33,
-        "Area Num": 1,
-        "Area Name": "SHET",
-        "Zone Num": 40,
-        "Zone Name": "T4",
-        "Owner Num": 1,
-        "Owner Name": "SHET",
-        "Code": -2,
-        "Voltage (pu)": 1.0109,
-        "Angle (deg)": 31.1,
-        "Normal Vmax (pu)": 1.1,
-        "Normal Vmin (pu)": 0.9,
-        "Emergency Vmax (pu)": 1.1,
-        "Emergency Vmin (pu)": 0.9,
-        "isMapped": true,
-        "isRelayPoint": false,
-        "busCoordinates": {
-          "x": 4.10968,
-          "y": 58.473496
-        }
-      }
-    ]
-  },
-  {
-    "id": "132kV_TRN-TBN",
     "sCircuitBuses": [
       {
         "Bus  Number": 19810,

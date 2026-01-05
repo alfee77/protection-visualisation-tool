@@ -16,6 +16,7 @@ let model2wtx = [];
 let model3wtx = [];
 let circuitBranches = [];
 let relayingPointSelect = document.querySelector("#select-relay-point");
+let drawCircuitBtn = document.querySelector("#draw-circuit-btn");
 let selectRelayFileBtn = document.querySelector("#select-relay-file-btn");
 let circListGood = false;
 let chartCanvas = document.querySelector("#chart");
@@ -116,6 +117,11 @@ relayingPointSelect.addEventListener("change", (event) => {
     })[0],
     circuitBranches
   );
+});
+
+drawCircuitBtn.addEventListener("click", async (event) => {
+  event.preventDefault();
+  theChart = displayChart(chartCanvas, prepareChartDataSets(circuitBranches));
 });
 
 selectRelayFileBtn.addEventListener("click", async (event) => {
