@@ -59,7 +59,9 @@ h3 {
   max-width: 120px;
   text-align: center;
   display: inline-block;
-  transition: background-color 220ms, transform 220ms;
+  transition:
+    background-color 220ms,
+    transform 220ms;
   border: none;
 }
 
@@ -110,7 +112,8 @@ button.btn {
 #navbar {
   width: 100%;
   padding: 10px 0;
-  box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.07),
+  box-shadow:
+    0px 3px 7px 1px rgba(0, 0, 0, 0.07),
     0px -3px 7px 1px rgba(0, 0, 0, 0.07);
   background-color: white;
   display: flex;
@@ -148,9 +151,9 @@ button.btn {
   color: var(--primary-2);
 }
 
-.form h2 {
-  font-size: 24px;
-  font-weight: 400;
+h2 {
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .form h3 {
@@ -174,7 +177,7 @@ button.btn {
 label {
   display: block;
   margin-bottom: 0.5em;
-  font-size: 16px;
+  font-size: small;
 }
 
 input:not(.btn) {
@@ -232,7 +235,9 @@ input:not(.btn) {
 }
 
 .container {
-  max-width: 800px;
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr;
+  /* max-width: 800px; */
   margin: 0px auto;
   padding: 0 20px;
 }
@@ -322,6 +327,8 @@ select {
 
 .label-wrap {
   display: grid;
-  grid-template-columns: 100fr 100fr;
-  gap: 20px;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  font-size: small;
 }

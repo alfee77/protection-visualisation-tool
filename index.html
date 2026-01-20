@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,9 +8,7 @@
   </head>
   <body>
     <nav id="navbar">
-      <a href="#" class="nav-brand"
-        >Circuit Protection Visualisation Tool V1.0.0</a
-      >
+      <h1 class="nav-brand">Circuit Protection Visualisation Tool V1.0.0</h1>
       <ul>
         <li class="nav-item">
           <a href="../">Circuit Viewer</a>
@@ -26,14 +24,14 @@
       <form id="create-form">
         <h2>Select Circuit & Relaying Point</h2>
         <div class="label-wrap">
-          <label for="select-circuit">Select a Circuit:</label>
+          <label for="select-circuit">Select a circuit:</label>
           <select id="select-circuit">
             <option id="default" value="">Please select</option>
           </select>
         </div>
 
         <div class="label-wrap">
-          <label for="select-relay-point">Select a Relaying Point:</label>
+          <label for="select-relay-point">Select a relaying point:</label>
           <select id="select-relay-point">
             <option id="default" value="">Please select</option>
           </select>
@@ -46,7 +44,7 @@
         </div>
       </form>
 
-      <div><canvas id="chart" width="300px" height="300px"></canvas></div>
+      <div><canvas id="chart" width="100px" height="100px"></canvas></div>
       <script type="module" src="/src/circuitViewer.js"></script>
     </div>
   </body>
