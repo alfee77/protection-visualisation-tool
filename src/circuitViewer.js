@@ -5,7 +5,6 @@ import {
   mapCircuitBuses,
   getFile,
 } from "./helper.js";
-import { MicomP443 } from "./micomP443.js";
 
 let availableCircuits = [];
 let circuitSelect = document.querySelector("#select-circuit");
@@ -17,10 +16,8 @@ let model3wtx = [];
 let circuitBranches = [];
 let relayingPointSelect = document.querySelector("#select-relay-point");
 let drawCircuitBtn = document.querySelector("#draw-circuit-btn");
-let selectRelayFileBtn = document.querySelector("#select-relay-file-btn");
 let circListGood = false;
 let chartCanvas = document.querySelector("#chart");
-let mainProtection;
 
 /*
  * The following fetch calls "get" the network buses and AC line data.
@@ -34,7 +31,7 @@ fetch(new Request("./ETYS DATA 2024 YEAR 2 Buses.json"))
         dat["Owner Name"] === "SHET" ||
         dat["Bus  Name"] === "BONB4-" ||
         dat["Bus  Name"] === "ZW052B" ||
-        dat["Bus  Name"] === "DENN4-"
+        dat["Bus  Name"] === "DENN4-",
     );
     sortByKey(modelBuses, "Bus  Name");
   });
@@ -72,7 +69,7 @@ circuitSelect.addEventListener("focus", (event) => {
     availableCircuits.forEach((circuit) => {
       circuitSelect.insertAdjacentHTML(
         "beforeend",
-        `<option value=${circuit["id"]}>${circuit["id"]}</option>`
+        `<option value=${circuit["id"]}>${circuit["id"]}</option>`,
       );
     });
   }
@@ -85,7 +82,7 @@ circuitSelect.addEventListener("change", (event) => {
     "<option id='default' value=''>Please select</option>";
 
   circ2view = availableCircuits.filter(
-    (circ) => circ["id"] === circuitSelect.value
+    (circ) => circ["id"] === circuitSelect.value,
   )[0];
 
   sortByKey(circ2view.sCircuitBuses, "Bus  Name");
@@ -93,7 +90,7 @@ circuitSelect.addEventListener("change", (event) => {
   circ2view.sCircuitBuses.forEach((bus) => {
     relayingPointSelect.insertAdjacentHTML(
       "beforeend",
-      `<option value=${bus["Bus  Name"]}>${bus["Bus  Name"]}</option>`
+      `<option value=${bus["Bus  Name"]}>${bus["Bus  Name"]}</option>`,
     );
   });
 
@@ -107,7 +104,7 @@ relayingPointSelect.addEventListener("change", (event) => {
     modelACCircuits,
     model2wtx,
     model3wtx,
-    circ2view.sCircuitBuses
+    circ2view.sCircuitBuses,
   );
 
   mapCircuitBuses(
@@ -115,23 +112,11 @@ relayingPointSelect.addEventListener("change", (event) => {
     circ2view.sCircuitBuses.filter((bus) => {
       return bus["Bus  Name"] === relayingPointSelect.value;
     })[0],
-    circuitBranches
+    circuitBranches,
   );
 });
 
 drawCircuitBtn.addEventListener("click", async (event) => {
   event.preventDefault();
   theChart = displayChart(chartCanvas, prepareChartDataSets(circuitBranches));
-});
-
-selectRelayFileBtn.addEventListener("click", async (event) => {
-  event.preventDefault();
-  const relayFile = await getFile();
-  mainProtection = new MicomP443(JSON.parse(await relayFile.text()));
-  console.log(mainProtection);
-
-  theChart = displayChart(
-    chartCanvas,
-    prepareChartDataSets(circuitBranches, mainProtection)
-  );
 });

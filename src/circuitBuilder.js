@@ -31,7 +31,7 @@ fetch(new Request("./ETYS DATA 2024 YEAR 2 Buses.json"))
         dat["Owner Name"] === "SHET" ||
         dat["Bus  Name"] === "BONB4-" ||
         dat["Bus  Name"] === "ZW052B" ||
-        dat["Bus  Name"] === "DENN4-"
+        dat["Bus  Name"] === "DENN4-",
     );
     sortByKey(modelBuses, "Bus  Name");
   });
@@ -62,7 +62,7 @@ modelBusSelect.addEventListener("focus", (event) => {
     modelBuses.forEach((bus) => {
       modelBusSelect.insertAdjacentHTML(
         "beforeend",
-        `<option value=${bus["Bus  Name"]}>${bus["Bus  Name"]}</option>`
+        `<option value=${bus["Bus  Name"]}>${bus["Bus  Name"]}</option>`,
       );
     });
   }
@@ -79,7 +79,7 @@ addBus.addEventListener("click", (event) => {
     circuitBuses.push(
       modelBuses.find((bus) => {
         return bus["Bus  Name"].includes(modelBusSelect.value);
-      })
+      }),
     );
   }
 
@@ -92,7 +92,7 @@ addBus.addEventListener("click", (event) => {
         <h3 class="bName">${bus["Bus  Name"]}</h3>
         <div class="bNumber">Bus number: ${bus["Bus  Number"]}, Bus Voltage: ${bus["Base kV"]}kV</div>
       </div>
-    </li>`
+    </li>`,
     );
   });
 });
@@ -103,7 +103,7 @@ buildCircuitButton.addEventListener("click", (event) => {
     modelACCircuits,
     model2wtx,
     model3wtx,
-    circuitBuses
+    circuitBuses,
   );
   mapCircuitBuses(circuitBuses, circuitBuses[0], circuitBranches);
   theChart = displayChart(chartCanvas, prepareChartDataSets(circuitBranches));
@@ -117,10 +117,10 @@ buildCircuitButton.addEventListener("click", (event) => {
         <h3 class="bName">Branch #${n}</h3>
         <div class="bNumber">From: ${branch["From Bus  Name"].substring(
           0,
-          6
+          6,
         )} <br />To  : ${branch["To Bus  Name"].substring(0, 6)}</div>
       </div>
-    </li>`
+    </li>`,
     );
     n++;
   });

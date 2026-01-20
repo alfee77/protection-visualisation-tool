@@ -3943,5 +3943,88 @@
         }
       }
     ]
+  },
+  {
+    "id": "132kV_BBN",
+    "sCircuitBuses": [
+      {
+        "Bus  Number": 11011,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "BREC1Q",
+        "Base kV": 132,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0096,
+        "Angle (deg)": 66.43,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": true,
+        "busCoordinates": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "Bus  Number": 11111,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "BRID1Q",
+        "Base kV": 132,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": 1,
+        "Voltage (pu)": 1.0092,
+        "Angle (deg)": 66.39,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 1.063,
+          "y": 2.108
+        }
+      },
+      {
+        "Bus  Number": 11130,
+        "Section Number": "",
+        "Substation  Number": "",
+        "Bus  Name": "BRID3-",
+        "Base kV": 33,
+        "Area Num": 1,
+        "Area Name": "SHET",
+        "Zone Num": 40,
+        "Zone Name": "T4",
+        "Owner Num": 1,
+        "Owner Name": "SHET",
+        "Code": -2,
+        "Voltage (pu)": 1.0082,
+        "Angle (deg)": 35.37,
+        "Normal Vmax (pu)": 1.1,
+        "Normal Vmin (pu)": 0.9,
+        "Emergency Vmax (pu)": 1.1,
+        "Emergency Vmin (pu)": 0.9,
+        "isMapped": true,
+        "isRelayPoint": false,
+        "busCoordinates": {
+          "x": 2.0735919999999997,
+          "y": 48.821743999999995
+        }
+      }
+    ]
   }
 ]
