@@ -27,7 +27,7 @@ export const getCircuitBranches = (
   pModelACCircuits,
   pModel2wtx,
   pModel3wtx,
-  pCircuitBuses
+  pCircuitBuses,
 ) => {
   let possibleBranches = [];
   let circuitBranches = [];
@@ -72,7 +72,7 @@ export const getCircuitBranches = (
   });
 
   /*
-   * The forgoing loop will return duplicate branches. By creating a Set object out of possibleBranches[]; this will remove, duplicates.
+   * The forgoing loop will return duplicate branches. By creating a Set object out of possibleBranches[]; this will remove duplicates.
    * Then convert Set object back to array, and store it in place using the spread operator
    */
   let s = new Set(possibleBranches);
